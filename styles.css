@@ -1,4 +1,4 @@
-/* Monolab — black & white film packaging, on the web.
+/* Automono — black & white film packaging, on the web.
    Headlines: Fjalla One, a condensed display sans.
    Body: Instrument Serif, a refined, slightly condensed serif. */
 
@@ -276,3 +276,13 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* Instrument Serif has no bold: emphasis inside body copy is set in the headline face instead. */
 strong, b { font-family: var(--font-head); font-weight: 400; letter-spacing: var(--track-head); font-size: 0.92em; }
+
+/* ---------- Press ---------- */
+
+.press-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 40px 0; }
+.press-pair img { width: 100%; height: auto; display: block; border: var(--border) solid var(--rule); }
+.press-pair figcaption { grid-column: 1 / -1; }
+@media (max-width: 600px) { .press-pair { grid-template-columns: 1fr; } }
+.facts { border-collapse: collapse; width: 100%; max-width: 640px; }
+.facts th, .facts td { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.facts th { font-family: var(--font-head); font-weight: 400; letter-spacing: var(--track-head); width: 34%; padding-right: 16px; }
